@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive demo of Oluchi Muoguilim's S&P 500 market regime detection project.">
+  <meta name="theme-color" content="#16121d">
+  <title>Market Regime Detection Demo | Oluchi Muoguilim</title>
+  <style>
+    :root{--ink:#211b27;--paper:#fffaf0;--pink:#f98fc2;--mint:#83dfbd;--blue:#93c9ff;--yellow:#ffd86b;--line:3px solid var(--ink)}
+    *{box-sizing:border-box}
+    body{margin:0;background:#16121d;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    a{color:inherit}
+    header{max-width:1120px;margin:auto;padding:24px 22px;display:flex;justify-content:space-between;color:#fff}
+    header a{text-decoration:none;font-weight:800}
+    main{max-width:1120px;margin:0 auto 60px;padding:0 22px}
+    .window{background:var(--paper);border:var(--line);box-shadow:8px 8px 0 #000;border-radius:2px;overflow:hidden}
+    .bar{background:var(--pink);border-bottom:var(--line);padding:12px 16px;display:flex;justify-content:space-between;font-weight:900}
+    .hero{padding:34px}
+    .eyebrow{font-size:13px;font-weight:900;letter-spacing:.08em}
+    h1{font-family:Georgia,serif;font-size:clamp(36px,7vw,74px);line-height:.94;margin:14px 0}
+    .intro{max-width:720px;font:18px/1.55 system-ui,sans-serif;color:#5f5663}
+    .controls{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}
+    button{font:800 14px ui-monospace,monospace;border:var(--line);padding:12px 16px;background:#fff;box-shadow:4px 4px 0 var(--ink);cursor:pointer}
+    button.active{background:var(--yellow);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+    .panel{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-top:18px}
+    .chart,.side{border:var(--line);background:#fff;padding:22px}
+    .chart-head{display:flex;justify-content:space-between;gap:20px;align-items:start}
+    .badge{padding:7px 10px;border:2px solid var(--ink);background:var(--mint);font-weight:900}
+    svg{width:100%;height:250px;margin-top:15px}
+    .grid{stroke:#ded5c8;stroke-width:1}
+    .line{fill:none;stroke:var(--ink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .area{fill:#f98fc255}
+    .dot{fill:var(--pink);stroke:var(--ink);stroke-width:3}
+    .metric{border-bottom:2px solid #ded5c8;padding:13px 0}
+    .metric:last-child{border:0}
+    .metric small{display:block;color:#746b76;margin-bottom:5px}
+    .metric strong{font-size:26px}
+    .results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .result{border:var(--line);padding:20px;background:var(--yellow)}
+    .result:nth-child(2){background:var(--mint)} .result:nth-child(3){background:var(--blue)}
+    .result b{display:block;font-size:28px;margin-top:8px}
+    .note{font:14px/1.5 system-ui,sans-serif;color:#635b65;margin:22px 0 0}
+    @media(max-width:760px){.hero{padding:22px}.panel,.results{grid-template-columns:1fr}header{font-size:13px}.chart-head{display:block}.badge{display:inline-block;margin-top:8px}}
+  </style>
+</head>
+<body>
+<header><a href="index.html">← back to portfolio</a><span>market_regime.ipynb</span></header>
+<main>
+  <section class="window">
+    <div class="bar"><span>interactive_demo.exe</span><span>□ □ ×</span></div>
+    <div class="hero">
+      <p class="eyebrow">S&amp;P 500 · GAUSSIAN HIDDEN MARKOV MODEL</p>
+      <h1>Market regime<br>detection</h1>
+      <p class="intro">This model groups market behavior into three hidden states using daily returns, volatility, momentum, and volume changes. Pick a regime to see what the model learned.</p>
+      <div class="controls" role="group" aria-label="Choose a market regime">
+        <button class="active" data-regime="bull">Bull</button>
+        <button data-regime="transition">Transition</button>
+        <button data-regime="bear">Bear</button>
+      </div>
+      <div class="panel">
+        <div class="chart">
+          <div class="chart-head"><div><small>SIMULATED REGIME VIEW</small><h2 id="title">Bull market</h2></div><span class="badge" id="badge">FULL EXPOSURE</span></div>
+          <svg viewBox="0 0 700 250" role="img" aria-label="Illustrative market path">
+            <g><line class="grid" x1="0" y1="50" x2="700" y2="50"/><line class="grid" x1="0" y1="125" x2="700" y2="125"/><line class="grid" x1="0" y1="200" x2="700" y2="200"/></g>
+            <path class="area" id="area" d="M0 210 L75 190 L145 198 L220 150 L290 160 L360 118 L430 126 L510 82 L590 92 L700 35 L700 240 L0 240Z"/>
+            <path class="line" id="path" d="M0 210 L75 190 L145 198 L220 150 L290 160 L360 118 L430 126 L510 82 L590 92 L700 35"/>
+            <circle class="dot" id="dot" cx="700" cy="35" r="7"/>
+          </svg>
+        </div>
+        <aside class="side">
+          <div class="metric"><small>Average daily return</small><strong id="return">+0.073%</strong></div>
+          <div class="metric"><small>20-day volatility</small><strong id="volatility">0.68%</strong></div>
+          <div class="metric"><small>20-day momentum</small><strong id="momentum">+2.79%</strong></div>
+          <div class="metric"><small>Strategy exposure</small><strong id="exposure">100%</strong></div>
+        </aside>
+      </div>
+      <div class="results">
+        <div class="result"><small>MODELLED PERIODS</small><b>3,991</b></div>
+        <div class="result"><small>STRATEGY GROWTH</small><b>16.25×</b></div>
+        <div class="result"><small>MAX DRAWDOWN</small><b>-9.5%</b></div>
+      </div>
+      <p class="note">Portfolio demo using results from the historical backtest. This is an educational research project, not financial advice or a live trading signal.</p>
+    </div>
+  </section>
+</main>
+<script>
+const regimes={
+ bull:{title:"Bull market",badge:"FULL EXPOSURE",ret:"+0.073%",vol:"0.68%",mom:"+2.79%",exp:"100%",color:"#83dfbd",path:"M0 210 L75 190 L145 198 L220 150 L290 160 L360 118 L430 126 L510 82 L590 92 L700 35",area:"M0 210 L75 190 L145 198 L220 150 L290 160 L360 118 L430 126 L510 82 L590 92 L700 35 L700 240 L0 240Z",y:35},
+ transition:{title:"Transition market",badge:"HALF EXPOSURE",ret:"+0.185%",vol:"1.54%",mom:"-0.89%",exp:"50%",color:"#ffd86b",path:"M0 115 L75 82 L145 135 L220 98 L290 155 L360 102 L430 172 L510 128 L590 185 L700 145",area:"M0 115 L75 82 L145 135 L220 98 L290 155 L360 102 L430 172 L510 128 L590 185 L700 145 L700 240 L0 240Z",y:145},
+ bear:{title:"Bear market",badge:"NO EXPOSURE",ret:"-0.537%",vol:"1.19%",mom:"-1.45%",exp:"0%",color:"#f98fc2",path:"M0 38 L75 65 L145 58 L220 105 L290 92 L360 148 L430 130 L510 182 L590 170 L700 220",area:"M0 38 L75 65 L145 58 L220 105 L290 92 L360 148 L430 130 L510 182 L590 170 L700 220 L700 240 L0 240Z",y:220}
+};
+document.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{
+ document.querySelectorAll("button").forEach(b=>b.classList.remove("active"));button.classList.add("active");
+ const r=regimes[button.dataset.regime];
+ title.textContent=r.title;badge.textContent=r.badge;badge.style.background=r.color;
+ document.getElementById("return").textContent=r.ret;volatility.textContent=r.vol;momentum.textContent=r.mom;exposure.textContent=r.exp;
+ path.setAttribute("d",r.path);area.setAttribute("d",r.area);area.style.fill=r.color+"66";dot.setAttribute("cy",r.y);dot.style.fill=r.color;
+}));
+</script>
+</body>
+</html>
