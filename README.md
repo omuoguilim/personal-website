@@ -2,7 +2,7 @@
 
 My personal portfolio, styled like a pixel desktop, with projects, experience, and a little about me.
 
-[Visit the website](https://oluchi-muoguilim.superct3663.chatgpt.site)
+[Visit the website](https://omuoguilim.github.io/personal-website/)
 
 ## Built with
 
@@ -27,4 +27,4 @@ Open http://localhost:8000 in your browser.
 
 ## Hosting
 
-The live website is hosted separately from this repository. Updating GitHub does not automatically update the hosted website.
+The site deploys to GitHub Pages whenever the `main` branch is updated.
