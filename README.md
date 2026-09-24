@@ -1,8 +1,17 @@
 # Oluchi Muoguilim | Personal Website
 
-My portfolio, presented as a pixel desktop with project windows, experience and a little about me.
+Hi, I'm Oluchi, a CS and Business student at Emory. This is my personal website.
+
+I wanted it to feel like a little computer desktop, with pixels, project windows and a photo of me. It brings my projects, experience and a little about me into one place.
 
 **[Visit the website](https://omuoguilim.github.io/personal-website/)**
+
+## Take a look around
+
+- Read a little about me and my experience.
+- Browse ShareCompass, DoseBuddy and Market Regime Detection.
+- Open a project's GitHub link to explore its code and README.
+- Try the site on your phone as well as a laptop to see how the layout adapts.
 
 ## Built with
 
