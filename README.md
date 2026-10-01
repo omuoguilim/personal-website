@@ -1,50 +1,27 @@
-# Oluchi Muoguilim | Personal Website
+# My personal website
 
-Hi, I'm Oluchi, a CS and Business student at Emory. This is my personal website.
+I’m Oluchi Muoguilim, a computer science and business student at Emory. I made this website to put my projects, experience and a little of my life in one place.
 
-I wanted it to feel like a little computer desktop, with pixels, project windows and a photo of me. It brings my projects, experience and a little about me into one place.
+I wanted it to feel like a small computer desktop: pixel details, window-style panels and pink buttons. It includes my projects, toolbox, current work and a few things I’m doing outside class.
 
-**[Visit the website](https://omuoguilim.github.io/personal-website/)**
+[Visit my website](https://omuoguilim.github.io/personal-website/)
 
-## Take a look around
+I also publish a [second portfolio link](https://oluchi-muoguilim.superct3663.chatgpt.site). That site has a separate deployment.
 
-- Read a little about me and my experience.
-- Browse ShareCompass, DoseBuddy and Market Regime Detection.
-- Open a project's GitHub link to explore its code and README.
-- Try the site on your phone as well as a laptop to see how the layout adapts.
+## Projects and demos
 
-## Built with
+I link to the source repositories for DoseBuddy, ShareCompass and my market regime research. The project buttons also open browser demos where available.
 
-HTML, CSS and vanilla JavaScript. There is no framework, package installation or build step.
+DoseBuddy’s repository contains the native Flutter app. Its browser demo is a separate Flutter web build with sample records. ShareCompass has an isolated browser demo alongside its Firebase account mode. I keep demo data separate from real accounts.
 
 ## Run locally
 
+The portfolio uses HTML, CSS and JavaScript, so I don’t need a framework build to preview it.
+
 ```sh
-git clone https://github.com/omuoguilim/personal-website.git
-cd personal-website
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000.
+I open `http://localhost:8000` from the project folder. GitHub Pages publication is configured in `.github/workflows/pages.yml`.
 
-## Project links
-
-Each project links to its GitHub repository. DoseBuddy also has a phone-style demo with sample records, and Market Regime Detection links to the historical dashboard.
-
-The older `market-regime-demo.html` remains in the repository, but is not the primary project destination.
-
-## Files
-
-| Path | Purpose |
-| --- | --- |
-| `index.html` | Portfolio content and links |
-| `styles.css` | Pixel desktop styling and responsive layout |
-| `script.js` | Clock and footer year |
-| `assets/oluchi.jpeg` | Profile photo |
-| `.github/workflows/pages.yml` | GitHub Pages publication |
-
-## Updating and publishing
-
-Edit the HTML, stylesheet or script, preview locally, and check the layout and links on a narrow and wide screen. Pushing to `main` runs the GitHub Pages workflow.
-
-The [Hosted portfolio](https://oluchi-muoguilim.superct3663.chatgpt.site) is published separately. Changes to this repository do not automatically update that copy.
+I keep the main page in `index.html`, styling in `styles.css` and interaction code in the JavaScript files. Demo applications have their own build and hosting setup.
