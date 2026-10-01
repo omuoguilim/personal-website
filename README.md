@@ -29,7 +29,7 @@ Open http://localhost:8000.
 
 ## Project links
 
-The ShareCompass, Market Regime Detection and DoseBuddy buttons open their GitHub repositories. The project cards no longer launch the market demo or the DoseBuddy emulator.
+Each project links to its GitHub repository. DoseBuddy also has a phone-style demo with sample records, and Market Regime Detection links to the historical dashboard.
 
 The older `market-regime-demo.html` remains in the repository, but is not the primary project destination.
 
@@ -47,4 +47,4 @@ The older `market-regime-demo.html` remains in the repository, but is not the pr
 
 Edit the HTML, stylesheet or script, preview locally, and check the layout and links on a narrow and wide screen. Pushing to `main` runs the GitHub Pages workflow.
 
-The [ChatGPT-hosted version](https://oluchi-muoguilim.superct3663.chatgpt.site) is published separately. Changes to this repository do not automatically update that copy.
+The [Hosted portfolio](https://oluchi-muoguilim.superct3663.chatgpt.site) is published separately. Changes to this repository do not automatically update that copy.
