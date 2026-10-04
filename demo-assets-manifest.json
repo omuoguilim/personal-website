@@ -1,0 +1,285 @@
+{
+  "origin": "https://oluchi-muoguilim.superct3663.chatgpt.site",
+  "files": [
+    {
+      "path": "demos/dosebuddy/app/assets/AssetManifest.bin",
+      "sha256": "49339a9ae56c619bda78dc2eabc2b3b0df45128f90349d2d793fbe84acb5b2cf"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/AssetManifest.bin.json",
+      "sha256": "8dd955abf303479f588010ff20a9acadae3beabe598600710581bef95ac6fd46"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/FontManifest.json",
+      "sha256": "cd7e03645bc44b2dd47b7cb626f51c4ecbf55a197ab77241628b47ac165fbe21"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/NOTICES",
+      "sha256": "7456ead5836ca9e01471a154a4a2789f7eef5f7864bf094b9bb095d553b1b1e4"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/assets/images/pill_bottle_app_icon.svg",
+      "sha256": "c9f042a82d48ffbc95eb0c2824b027adc35c7b7c82434fa344afa3b1869d4347"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/assets/images/pill_bottle_icon.svg",
+      "sha256": "b1345d5af174ccca6344e687db283d9dbf41590c0baf936ece8d9c8b8f632ea9"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/assets/images/pill_bottle_logo.svg",
+      "sha256": "7c0d678736aacd59c5e25305fa87517a45e7424d8817124c2cd5084a96c0c9fd"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/fonts/MaterialIcons-Regular.otf",
+      "sha256": "2c43b7158e3e01555cb16cade634e8b9ee337ee631ab3f3f029dfc7b34dce14b"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "sha256": "3d90c370aa4cf00dc57ee2b902f6652147c0f81e03e483df584a9c08b1687c9d"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/shaders/ink_sparkle.frag",
+      "sha256": "2dca5ab93d4ec29e963f996f3916320ba60825e9537dfb149a68008c7a16b026"
+    },
+    {
+      "path": "demos/dosebuddy/app/assets/shaders/stretch_effect.frag",
+      "sha256": "ab412f07a5b9b50b67a885b24dbe16929738ae28630407d6490c924caf0a3220"
+    },
+    {
+      "path": "demos/dosebuddy/app/build-provenance.json",
+      "sha256": "7689d37ac29dad1c5a1ff3de41e3a78f75ec0c25b5f2643bb630536619fe675a"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/canvaskit.js",
+      "sha256": "bb559f6080c7d312ac2a912b4abec9f68ff3d3022d4a603c7796b9b31460642b"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/canvaskit.wasm",
+      "sha256": "fbed517a43e82452404446683f00f2e876d835aed84410695759e67b6bb01cd3"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/chromium/canvaskit.js",
+      "sha256": "6018b12bd8ed37e6952eee72d59c1cf7ad707ccdb74a0a45190010f77edd9068"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/chromium/canvaskit.wasm",
+      "sha256": "ae8ff1d858140f7b1300ced3fa89fb8c9dce0a400a0f4f1e11f6dcfb3315fdcf"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/webparagraph/canvaskit.js",
+      "sha256": "3110e3e4d9b7b5657d336f253aaca8acca5777cde9319fb69ac302d6ff5a8b23"
+    },
+    {
+      "path": "demos/dosebuddy/app/canvaskit/webparagraph/canvaskit.wasm",
+      "sha256": "0ce1b05082efdc8529550e8a01f6ff0593972d55525035010e26f5600aa9f254"
+    },
+    {
+      "path": "demos/dosebuddy/app/favicon.png",
+      "sha256": "7ab2525f4b86b65d3e4c70358a17e5a1aaf6f437f99cbcc046dad73d59bb9015"
+    },
+    {
+      "path": "demos/dosebuddy/app/flutter.js",
+      "sha256": "2beb1ce6b159c71540aa66030af1d7964b6a92377cc78473745e02f97b74effe"
+    },
+    {
+      "path": "demos/dosebuddy/app/flutter_bootstrap.js",
+      "sha256": "646197b37e357419d29602f12a527ff67e4a45f0a80575b6a524c736f5891fbd"
+    },
+    {
+      "path": "demos/dosebuddy/app/flutter_service_worker.js",
+      "sha256": "a131df5ca46154cc4eb79044f7f5a14029c2f8bfccf8cef34e3ec3b5a9f5a88c"
+    },
+    {
+      "path": "demos/dosebuddy/app/icons/Icon-192.png",
+      "sha256": "3dce99077602f70421c1c6b2a240bc9b83d64d86681d45f2154143310c980be3"
+    },
+    {
+      "path": "demos/dosebuddy/app/icons/Icon-512.png",
+      "sha256": "baccb205ae45f0b421be1657259b4943ac40c95094ab877f3bcbe12cd544dcbe"
+    },
+    {
+      "path": "demos/dosebuddy/app/icons/Icon-maskable-192.png",
+      "sha256": "d2c842e22a9f4ec9d996b23373a905c88d9a203b220c5c151885ad621f974b5c"
+    },
+    {
+      "path": "demos/dosebuddy/app/icons/Icon-maskable-512.png",
+      "sha256": "6aee06cdcab6b2aef74b1734c4778f4421d2da100b0ff9e52b21b55240202929"
+    },
+    {
+      "path": "demos/dosebuddy/app/index.html",
+      "sha256": "2f02d69b0c4465d79fc349026f1a740097b154a0690a53d27438adb982e04daa"
+    },
+    {
+      "path": "demos/dosebuddy/app/main.dart.js",
+      "sha256": "0b242ab7d3da90d6853bbec6082d3df39c859c6d62d7dd8a0accb4a6b23c2da0"
+    },
+    {
+      "path": "demos/dosebuddy/app/manifest.json",
+      "sha256": "b3ed91f0fda5b5824f1ecc1de2ad806ab6918a06b9afd6bb8959edd9b090a559"
+    },
+    {
+      "path": "demos/dosebuddy/app/ocr.js",
+      "sha256": "eaa7ba0aa651c574ec53ecb8b0e99abc66151999c45a9ca0fadf61c9ad9f3252"
+    },
+    {
+      "path": "demos/dosebuddy/app/version.json",
+      "sha256": "fa249bab1ce72d64dfc4c3b2bd70a37ee31e3a31c095169abef02d7f96dee8a6"
+    },
+    {
+      "path": "demos/dosebuddy/app.js",
+      "sha256": "532b75876637e6281a491acc596ef63af5e94a1b4bed281ab469ab1113c431ba"
+    },
+    {
+      "path": "demos/dosebuddy/style.css",
+      "sha256": "1a47b8454db1b53eda2187fd22aa2a78da5fbd30f73ebc1ce645829c8e81d800"
+    },
+    {
+      "path": "demos/regime-lab/index.html",
+      "sha256": "f06573a1699cced1824724e6dca185399e5fd81fec994fe8f4bb517fffa73c54"
+    },
+    {
+      "path": "demos/sharecompass/assets/index-CVGp6pVq.js",
+      "sha256": "d7da842bbec728f65b7cbe4d5fa287489bd8ab4e98388b609f9ca91382097b2c"
+    },
+    {
+      "path": "demos/sharecompass/assets/index-DUA2whra.css",
+      "sha256": "bdf579024588848ad59b655b8e52fd9f6b043b782757f69cd5043bfd05aa590c"
+    },
+    {
+      "path": "demos/sharecompass/build-provenance.json",
+      "sha256": "098793b6325f67eb82581d02c5babf49044957408d1a4833655e8719b44f418a"
+    },
+    {
+      "path": "demos/sharecompass/causes/children.webp",
+      "sha256": "e3762414045f6fe903c48da72dc92a3c8ba0c911196dba0affc97abcb1c463c9"
+    },
+    {
+      "path": "demos/sharecompass/causes/credits.json",
+      "sha256": "9528c236d6ffcb950f91cf9eecae5ab342d591b70f1266e594d131c7ba5a67ed"
+    },
+    {
+      "path": "demos/sharecompass/causes/disaster.webp",
+      "sha256": "7185a8f9a47dfd5348e7085eb2e9bf8e1fa36801d7f56239b5d9b5af1792f93e"
+    },
+    {
+      "path": "demos/sharecompass/causes/education.webp",
+      "sha256": "02d99c83b60f47be9702cef1c83b4316e30692fe5442c19d644b2d9cea56e0f9"
+    },
+    {
+      "path": "demos/sharecompass/causes/health.webp",
+      "sha256": "84b7ed3d8e14c35942a4cb253d1be7b59a1c9fcc82dcc09c8a471971f9a5441b"
+    },
+    {
+      "path": "demos/sharecompass/causes/housing.webp",
+      "sha256": "b245e1158457a2a83cb8b29c0ccc0e5efdac84f2b282493acbca507794a92134"
+    },
+    {
+      "path": "demos/sharecompass/causes/hunger.webp",
+      "sha256": "c8166464e53c4cd276ee4a586874816d95f60274cee259a16b228d704d59e4dd"
+    },
+    {
+      "path": "demos/sharecompass/causes/refugees.webp",
+      "sha256": "3098c3475ad01942157bf77babf9d38a66e237e5cb136a0dcb0124d27f0cfac8"
+    },
+    {
+      "path": "demos/sharecompass/causes/water.webp",
+      "sha256": "0f840253c9306d571043f13d52d394897bbf08531c50634a9c91531f88986263"
+    },
+    {
+      "path": "demos/sharecompass/credits.html",
+      "sha256": "d6a6146853d0a131f9067dae1acafa22f208d6b8556f7f6b997f7318d9f8e54c"
+    },
+    {
+      "path": "demos/sharecompass/index.html",
+      "sha256": "b61bdde13adff7064458e38a62910e4890e777bafcfbd42953ba0ffe1ed83117"
+    },
+    {
+      "path": "apps/sharecompass/assets/App-CoVUt3N1.js",
+      "sha256": "5d13312ba37352340199263dbffb58259e404184151724599eecb0b025bbf9cb"
+    },
+    {
+      "path": "apps/sharecompass/assets/firebase-DXkxAYIw.js",
+      "sha256": "15784004d05649f243aa456f71f4bde0e2afa30c28ff55b2a4789657855b8451"
+    },
+    {
+      "path": "apps/sharecompass/assets/index-DUA2whra.css",
+      "sha256": "bdf579024588848ad59b655b8e52fd9f6b043b782757f69cd5043bfd05aa590c"
+    },
+    {
+      "path": "apps/sharecompass/assets/index-DoUCAuOn.js",
+      "sha256": "9603b1b3abbe22cc623ca212d9d16912759552e5e95cdd618351501ea8f46738"
+    },
+    {
+      "path": "apps/sharecompass/assets/index.esm-DxCcOV_e.js",
+      "sha256": "7e813ec6e488400f7d62666624bfc91d14ddc6442806ccee9216277d8f5e86ce"
+    },
+    {
+      "path": "apps/sharecompass/build-provenance.json",
+      "sha256": "098793b6325f67eb82581d02c5babf49044957408d1a4833655e8719b44f418a"
+    },
+    {
+      "path": "apps/sharecompass/causes/children.webp",
+      "sha256": "e3762414045f6fe903c48da72dc92a3c8ba0c911196dba0affc97abcb1c463c9"
+    },
+    {
+      "path": "apps/sharecompass/causes/credits.json",
+      "sha256": "9528c236d6ffcb950f91cf9eecae5ab342d591b70f1266e594d131c7ba5a67ed"
+    },
+    {
+      "path": "apps/sharecompass/causes/disaster.webp",
+      "sha256": "7185a8f9a47dfd5348e7085eb2e9bf8e1fa36801d7f56239b5d9b5af1792f93e"
+    },
+    {
+      "path": "apps/sharecompass/causes/education.webp",
+      "sha256": "02d99c83b60f47be9702cef1c83b4316e30692fe5442c19d644b2d9cea56e0f9"
+    },
+    {
+      "path": "apps/sharecompass/causes/health.webp",
+      "sha256": "84b7ed3d8e14c35942a4cb253d1be7b59a1c9fcc82dcc09c8a471971f9a5441b"
+    },
+    {
+      "path": "apps/sharecompass/causes/housing.webp",
+      "sha256": "b245e1158457a2a83cb8b29c0ccc0e5efdac84f2b282493acbca507794a92134"
+    },
+    {
+      "path": "apps/sharecompass/causes/hunger.webp",
+      "sha256": "c8166464e53c4cd276ee4a586874816d95f60274cee259a16b228d704d59e4dd"
+    },
+    {
+      "path": "apps/sharecompass/causes/refugees.webp",
+      "sha256": "3098c3475ad01942157bf77babf9d38a66e237e5cb136a0dcb0124d27f0cfac8"
+    },
+    {
+      "path": "apps/sharecompass/causes/water.webp",
+      "sha256": "0f840253c9306d571043f13d52d394897bbf08531c50634a9c91531f88986263"
+    },
+    {
+      "path": "apps/sharecompass/credits.html",
+      "sha256": "d6a6146853d0a131f9067dae1acafa22f208d6b8556f7f6b997f7318d9f8e54c"
+    },
+    {
+      "path": "apps/sharecompass/index.html",
+      "sha256": "4f1b3245b7086b506e9536cae8d4ed4722f6c630f8c28c4ca374ef901461b524"
+    },
+    {
+      "path": "assets/a-different-world.webp",
+      "sha256": "d88f94be1319df13fddf4d13be59e12ca8a0eadd8084201ef1cb3790c70651d6"
+    },
+    {
+      "path": "assets/halloween-ideas.webp",
+      "sha256": "95e06e0f7f4e3496ecf1b5f2875fa4b96e86589ec47b42f9d213492403ec2d49"
+    },
+    {
+      "path": "assets/matcha.webp",
+      "sha256": "e908a9d85b8af396612bae8033a813a9850283b440fea7a02c142faac4005c73"
+    },
+    {
+      "path": "assets/oluchi-october.jpeg",
+      "sha256": "ed3a927de185564e84e29353d64c88ff435c5e3c0db0a1d6310b41cb8c4ff4bc"
+    },
+    {
+      "path": "assets/oluchi.jpeg",
+      "sha256": "20239556bfe38d0d2b754bb7db65e6c19ce76d25845eb9cfdcbd1476c4aa91e8"
+    }
+  ]
+}

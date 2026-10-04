@@ -25,10 +25,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare portfolio and app builds
+        run: |
+          mkdir -p _site
+          cp index.html styles.css script.js _site/
+          cp -R assets demos _site/
+          python scripts/prepare-pages.py
+          touch _site/.nojekyll
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
