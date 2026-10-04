@@ -20,7 +20,7 @@ def download(entry):
             if Path(path).suffix == '.html':
                 # Cloudflare can append a per-request browser challenge to HTML.
                 # Remove only that transport addition, then verify the source hash.
-                data = re.sub(rb'<script>\\(function\\(\\)\\{function c\\(\\).*?</script>',
+                data = re.sub(re.escape(b'<script>(function(){function c()') + rb'.*?</script>',
                               lambda match: b'' if b'window.__CF$cv$params' in match[0] else match[0],
                               data, flags=re.DOTALL)
             if hashlib.sha256(data).hexdigest() != entry['sha256']:
