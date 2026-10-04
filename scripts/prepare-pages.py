@@ -17,7 +17,7 @@ def download(entry):
             with urllib.request.urlopen(request, timeout=90) as response:
                 data = response.read()
             if hashlib.sha256(data).hexdigest() != entry['sha256']:
-                raise ValueError('Asset changed: ' + path + ' length=' + str(len(data)) + ' sha=' + hashlib.sha256(data).hexdigest() + ' preview=' + repr(data[:900]))
+                raise ValueError('Asset changed: ' + path + ' length=' + str(len(data)) + ' sha=' + hashlib.sha256(data).hexdigest() + ' preview=' + repr(data[-1600:]))
             destination = output / path
             destination.parent.mkdir(parents=True, exist_ok=True)
             if destination.suffix in {'.html', '.js', '.css', '.json'}:
