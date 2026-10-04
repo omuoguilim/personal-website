@@ -2,6 +2,7 @@
 import concurrent.futures
 import hashlib
 import json
+import re
 from pathlib import Path
 import time
 import urllib.request
@@ -16,8 +17,14 @@ def download(entry):
             request = urllib.request.Request(manifest['origin'] + '/' + path, headers={'User-Agent': 'Portfolio-Pages-Build'})
             with urllib.request.urlopen(request, timeout=90) as response:
                 data = response.read()
+            if Path(path).suffix == '.html':
+                # Cloudflare can append a per-request browser challenge to HTML.
+                # Remove only that transport addition, then verify the source hash.
+                data = re.sub(rb'<script>\\(function\\(\\)\\{function c\\(\\).*?</script>',
+                              lambda match: b'' if b'window.__CF$cv$params' in match[0] else match[0],
+                              data, flags=re.DOTALL)
             if hashlib.sha256(data).hexdigest() != entry['sha256']:
-                raise ValueError('Asset changed: ' + path + ' length=' + str(len(data)) + ' sha=' + hashlib.sha256(data).hexdigest() + ' preview=' + repr(data[-1600:]))
+                raise ValueError('Asset changed: ' + path)
             destination = output / path
             destination.parent.mkdir(parents=True, exist_ok=True)
             if destination.suffix in {'.html', '.js', '.css', '.json'}:
